@@ -1,0 +1,67 @@
+html {
+
+    font-size: 62.5%; /* 計算を楽にするため。これを設定するとrem値を簡単に使える*/
+}
+
+body {
+    font-size: 16px; /* IE8サポート用*/
+    font-size: 1.6em;
+    /* chrome用
+     ChromeだとbodyもRoot要素だと判断されるためか、htmlのfont-sizeが無効になり、デフォルトフォントサイズから1.4倍されるらしい。*/
+
+    color: #333333;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.pageTitle {
+    font-size: 2.6rem;
+    background-color: #F2F2E5;
+    padding: 0.5rem 1.5rem;
+}
+
+.heading-typeA {
+    font-size: 1.8rem;
+    color: #349FA6;
+    border-bottom: solid 0.1rem #349FA6;
+    padding: 0.5rem;
+}
+
+.heading-typeB {
+    font-size: 1.6rem;
+    border-left: solid 0.5rem #E3E4D9;
+    padding-left: 1rem;
+}
+
+.heading-typeC {
+    font-size: 1.4rem;
+}
+
+/* 区切り線・余白*/
+.articleDetailHead {
+    border-bottom: solid 0.1rem #CCCCCC;
+    margin-bottom: 3.0rem;
+    padding-bottom: 1.5rem;
+}
+
+.articleDetailFoot {
+    border-top: solid 0.1rem #CCCCCC;
+    margin-top: 3.0rem;
+    padding-top: 1.5rem;
+}
+
+.articleDetailBody section {
+    margin: 3.0rem 0;
+}
+
+/* 撮影情報 */
+.creditUnit {
+    padding: 1.0rem;
+    border: solid 0.1rem #CCCCCC;
+}
+
+.creditUnit p {
+    font-size: 1.2rem;
+}
