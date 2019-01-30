@@ -12,6 +12,29 @@ body {
 
     color: #333333;
 }
+/*ページヘッダー*/
+#siteTitle{
+    font-size: 4.0rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+    /* GoogleWebFontの適用*/
+    font-family: 'Alegreya Sans', sans-serif;
+}
+#catchCopy{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-top:0.5rem;
+}
+
+/* ページフッター*/
+#pageFoot{
+    border-top: solid 0.1rem #CCCCCC;
+    margin-top: 1.5rem;
+}
+#copyRight small{
+    font-size: 1.2rem;
+    line-height: 1.429;
+}
 
 p {
     font-size: 1.4rem;
@@ -51,11 +74,21 @@ table caption{
     font-weight: bold;
 }
 
+/* 図版 */
+figure{
+    margin: 0;
+}
+figcaption{
+    font-size: 1.2rem;
+}
+
 /* 見出し */
 .pageTitle {
     font-size: 2.6rem;
     background-color: #F2F2E5;
     padding: 0.5rem 1.5rem;
+    /* GoogleWebFontの適用*/
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .heading-typeA {
