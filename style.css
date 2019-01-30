@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    font-family: sans-serif;    /*windowsではメイリオやMSPゴシック Macではヒラギノ角ゴ*/
     font-size: 16px; /* IE8サポート用*/
     font-size: 1.6em;
     /* chrome用
@@ -14,8 +15,43 @@ body {
 
 p {
     font-size: 1.4rem;
+    line-height: 1.429;
+
 }
 
+/* リスト */
+ul li{
+    font-size: 1.4rem;
+    list-style-type: circle;
+    /*list-style-position で長文の文章の頭を揃えるかそのまま続けて書くかを指定できる*/
+}
+
+/*表*/
+table{
+    font-size: 1.4rem;
+    border: 0.1rem solid #CCCCCC;
+    //padding: 0.5rem 1.0rem;
+    border-collapse: collapse;
+    width: 80%;    /*表の大きさを指定*/
+}
+
+table th,
+table td{
+    border: 0.1rem solid #CCCCCC;
+    padding: 0.5rem 1.0rem;
+}
+
+table th{
+    background-color: #EEEEEE;
+    text-align: left;
+}
+
+table caption{
+    text-align: left;
+    font-weight: bold;
+}
+
+/* 見出し */
 .pageTitle {
     font-size: 2.6rem;
     background-color: #F2F2E5;
