@@ -12,6 +12,12 @@ body {
 
     color: #333333;
 }
+
+/* ページ */
+#page{
+    width: 98.0rem;
+    margin: 0 auto;
+}
 /*ページヘッダー*/
 #siteTitle{
     font-size: 4.0rem;
@@ -35,7 +41,16 @@ body {
     font-size: 1.2rem;
     line-height: 1.429;
 }
+/* ページボディ */
+#pageBodyMain{
+    width: 72.0rem;
+    background-color: #66CCFF;
+}
 
+#pageBodySub{
+    width: 22.0rem;
+    background-color: #99FF66;
+}
 p {
     font-size: 1.4rem;
     line-height: 1.429;
