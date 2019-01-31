@@ -19,14 +19,14 @@ body {
     margin: 0 auto;
 }
 /*ページヘッダー*/
-#siteTitle{
+#pageHead #siteTitle{
     font-size: 4.0rem;
     line-height: 1.2;
     margin-bottom: 0;
     /* GoogleWebFontの適用*/
     font-family: 'Alegreya Sans', sans-serif;
 }
-#catchCopy{
+#pageHead #catchCopy{
     font-size: 1.2rem;
     line-height: 1.2;
     margin-top:0.5rem;
@@ -37,7 +37,7 @@ body {
     border-top: solid 0.1rem #CCCCCC;
     margin-top: 1.5rem;
 }
-#copyRight small{
+#pageFoot #copyRight small{
     font-size: 1.2rem;
     line-height: 1.429;
 }
@@ -45,8 +45,9 @@ body {
 
 /* ページボディ */
 #pageBody{
-    display: flex;
-    //justify-content: space-between;
+    display: flex; /* flexboxの指定 */
+    //flex-direction: row-reverse;/* 行の順番を逆にする場合 */
+    //justify-content: space-between;/* 均等配置する場合 */
     background-color: #FFCC66;
     border: solid 10px #FF0000;
 }
@@ -59,24 +60,51 @@ body {
 #pageBodySub{
     width: 22.0rem;
     background-color: #99FF66;
-    padding-left: 1.0rem;
 
 }
-p {
+
+/* サブカラムの装飾用 見出し */
+#pageBodySub h2{
+    font-size: 1.6rem;
+    line-height: 1.375;
+    padding: 5px;
+    border-bottom: 2px solid #CCCCCC;
+
+}
+
+/* おしらせ */
+#pageBodySub .newsList ul {
+    list-style: none;
+    padding: 0; /* お知らせ直下の文字 ブラウザ標準のパディングを解除する */
+}
+
+#pageBodySub .newsList ul li {
+    font-size: 1.2rem;
+    line-height: 1.375;
+    margin: 0.1rem 0.5rem;
+
+}
+
+#pageBodySub .newsList ul li time {
+    font-weight: bold;
+    display: block;
+}
+
+#pageBodyMain p {
     font-size: 1.4rem;
     line-height: 1.429;
 
 }
 
 /* リスト */
-ul li{
+#pageBodyMain ul li{
     font-size: 1.4rem;
     list-style-type: circle;
     /*list-style-position で長文の文章の頭を揃えるかそのまま続けて書くかを指定できる*/
 }
 
 /*表*/
-table{
+#pageBodyMain table{
     font-size: 1.4rem;
     border: 0.1rem solid #CCCCCC;
     //padding: 0.5rem 1.0rem;
@@ -84,32 +112,32 @@ table{
     width: 80%;    /*表の大きさを指定*/
 }
 
-table th,
-table td{
+#pageBodyMain table th,
+#pageBodyMain table td{
     border: 0.1rem solid #CCCCCC;
     padding: 0.5rem 1.0rem;
 }
 
-table th{
+#pageBodyMain table th{
     background-color: #EEEEEE;
     text-align: left;
 }
 
-table caption{
+#pageBodyMain table caption{
     text-align: left;
     font-weight: bold;
 }
 
 /* 図版 */
-figure{
+#pageBodyMain figure{
     margin: 0;
 }
-figcaption{
+#pageBodyMain figcaption{
     font-size: 1.2rem;
 }
 
 /* 見出し */
-.pageTitle {
+#pageBodyMain .pageTitle {
     font-size: 2.6rem;
     background-color: #F2F2E5;
     padding: 0.5rem 1.5rem;
@@ -117,46 +145,46 @@ figcaption{
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.heading-typeA {
+#pageBodyMain .heading-typeA {
     font-size: 1.8rem;
     color: #349FA6;
     border-bottom: solid 0.1rem #349FA6;
     padding: 0.5rem;
 }
 
-.heading-typeB {
+#pageBodyMain .heading-typeB {
     font-size: 1.6rem;
     border-left: solid 0.5rem #E3E4D9;
     padding-left: 1rem;
 }
 
-.heading-typeC {
+#pageBodyMain .heading-typeC {
     font-size: 1.4rem;
 }
 
 /* 区切り線・余白*/
-.articleDetailHead {
+#pageBodyMain .articleDetailHead {
     border-bottom: solid 0.1rem #CCCCCC;
     margin-bottom: 3.0rem;
     padding-bottom: 1.5rem;
 }
 
-.articleDetailFoot {
+#pageBodyMain .articleDetailFoot {
     border-top: solid 0.1rem #CCCCCC;
     margin-top: 3.0rem;
     padding-top: 1.5rem;
 }
 
-.articleDetailBody section {
+#pageBodyMain .articleDetailBody section {
     margin: 3.0rem 0;
 }
 
 /* 撮影情報 */
-.creditUnit {
+#pageBodyMain .creditUnit {
     padding: 1.0rem;
     border: solid 0.1rem #CCCCCC;
 }
 
-.creditUnit p {
+#pageBodyMain .creditUnit p {
     font-size: 1.2rem;
 }
