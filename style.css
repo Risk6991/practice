@@ -13,6 +13,10 @@ body {
     color: #333333;
 }
 
+/* リンク */
+a{color: #999966;}
+a:hover{color: #996600}
+
 /* ページ */
 #page{
     width: 98.0rem;
@@ -30,6 +34,23 @@ body {
     font-size: 1.2rem;
     line-height: 1.2;
     margin-top:0.5rem;
+}
+
+/* グローバルナビ */
+#pageHead .globalNavi{
+    border: solid #CCCCCC;
+    border-width: 1px 0;
+}
+
+/* ブラウザ標準の余白を消す */
+#pageHead .globalNavi ul{
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    //margin: 0;
+}
+#pageHead .globalNavi ul li{
+    width: 245px; /* コンテンツの横幅を980に設定したため、割る4 */
 }
 
 /* ページフッター*/
@@ -88,6 +109,20 @@ body {
 #pageBodySub .newsList ul li time {
     font-weight: bold;
     display: block;
+}
+
+#pageBodySub .localNavi ul li{
+    font-size: 1.4rem;
+    line-height: 1.429;
+    margin-bottom: 1.2rem;
+    //list-style-image: url("images/ico_arrow.png"); /* 矢印アイコンをつけるが少しずれる */
+    list-style-type: none;
+    background-image: url("images/ico_arrow.png");
+    background-repeat: no-repeat; /* 背景画像の繰り返しをやめる */
+    background-position: 0 8px;
+    padding-left: 10px;
+
+
 }
 
 #pageBodyMain p {
