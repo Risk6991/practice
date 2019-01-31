@@ -41,7 +41,16 @@ body {
     font-size: 1.2rem;
     line-height: 1.429;
 }
+
+
 /* ページボディ */
+#pageBody{
+    display: flex;
+    //justify-content: space-between;
+    background-color: #FFCC66;
+    border: solid 10px #FF0000;
+}
+
 #pageBodyMain{
     width: 72.0rem;
     background-color: #66CCFF;
@@ -50,6 +59,8 @@ body {
 #pageBodySub{
     width: 22.0rem;
     background-color: #99FF66;
+    padding-left: 1.0rem;
+
 }
 p {
     font-size: 1.4rem;
