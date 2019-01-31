@@ -50,7 +50,7 @@ a:hover{color: #996600}
     //margin: 0;
 }
 #pageHead .globalNavi ul li{
-    width: 245px; /* コンテンツの横幅を980に設定したため、割る4 */
+    width: 24.5rem; /* コンテンツの横幅を980に設定したため、割る4 */
 }
 
 /* ページフッター*/
