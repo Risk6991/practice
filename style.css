@@ -36,20 +36,35 @@ body {
 #pageFoot{
     border-top: solid 0.1rem #CCCCCC;
     margin-top: 1.5rem;
+    //clear: both; /* clearfixの適用練習のため */
 }
 #copyRight small{
     font-size: 1.2rem;
     line-height: 1.429;
 }
+
 /* ページボディ */
+#pageBody{
+    background-color: #FFCC66;
+    border: solid 10px #FF0000;
+}
+
+#pageBody:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
 #pageBodyMain{
     width: 72.0rem;
     background-color: #66CCFF;
+    float: left;
 }
 
 #pageBodySub{
     width: 22.0rem;
     background-color: #99FF66;
+    float: right;
 }
 p {
     font-size: 1.4rem;
