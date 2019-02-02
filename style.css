@@ -17,6 +17,12 @@ body {
 a{color: #999966;}
 a:hover{color: #996600}
 
+.pageTop{
+    font-size: 1.2rem;
+    text-align: right;
+    margin-top: 3.0rem;
+}
+
 /* ページ */
 #page{
     width: 98.0rem;
