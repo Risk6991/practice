@@ -99,6 +99,33 @@ a:hover{color: #996600}
     background-color: #66CCFF;
 }
 
+#pageBodyMain .btn{
+    text-align: center;
+    padding: 20px;
+    //margin: 0px 0;
+    border-bottom: 1px dotted #CCCCCC; /* 下線とその種類 */
+}
+
+#pageBody .btn a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #058BA9;
+    padding: 10px 20px; /* テキストサイズの背景色を広げる */
+    border-radius: 1.0rem; /* 背景色の角を丸める */
+    background-image: linear-gradient(to bottom,#92CDDB,#058BA9);
+    /* グラデーションを掛ける。background-colorが不要になるが、未対応ブラウザのために残しておく */
+    border: 1px solid #058BA9;
+    box-shadow: 1px 1px 0 #9DDDED inset;
+    text-shadow: 0px -1px 0 #333333; /* 3つの値のうち、水平方向、垂直方向、ぼかし具合となる */
+
+}
+
+#pageBodyMain .btn a:hover{
+    opacity: 0.7; /* マウスが重なったときに半島にする。光ったような効果となる  */
+}
+
 #pageBodySub{
     width: 22.0rem;
     background-color: #99FF66;
