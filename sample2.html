@@ -5,8 +5,22 @@
     <title>サンプルページです。</title>
     <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <!-- GoogleWebFontの利用-->
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                //auto: true,
+                //speed: 1000,
+                //pause: 4000
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -32,12 +46,32 @@
 
         <div id="pageBodyMain">
             <article>
+                <div class="slider">
+                    <div>
                 <header class="articleDetailHead">
-                    <h1 class="pageTitle">WordPressデザインワークブック</h1>
+                    <h1 class="pageTitle">WordPressデザインワークブック1</h1>
                     <img src="images/img_02_01.jpg" alt="">
                     <p>WordPressテーマカスタマイズの入門書<br>
                         <a href="http://www.amazon.co.jp/dp/4881669281">Amazonでのご購入はこちら</a></p>
                 </header>
+                    </div>
+                    <div>
+                        <header class="articleDetailHead">
+                            <h1 class="pageTitle">WordPressデザインワークブック2</h1>
+                            <img src="images/img_02_02.jpg" alt="">
+                            <p>WordPressテーマカスタマイズの入門書<br>
+                                <a href="http://www.amazon.co.jp/dp/4881669281">Amazonでのご購入はこちら</a></p>
+                        </header>
+                    </div>
+                    <div>
+                        <header class="articleDetailHead">
+                            <h1 class="pageTitle">WordPressデザインワークブック3</h1>
+                            <img src="images/img_02_03.jpg" alt="">
+                            <p>WordPressテーマカスタマイズの入門書<br>
+                                <a href="http://www.amazon.co.jp/dp/4881669281">Amazonでのご購入はこちら</a></p>
+                        </header>
+                    </div>
+                </div>
 
                 <section class="articleDetailBody">
                     <h2 class="heading-typeA">ウェブ制作のワークフローに沿った実践的な解説書</h2>
